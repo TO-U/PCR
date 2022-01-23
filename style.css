@@ -1,0 +1,444 @@
+@charset "utf-8";
+
+body {
+    width: 100%;
+}
+
+@media screen and (max-width:767px) { /*スマホ用デザイン991だとタブレット用*/
+    html {
+        background-color : ○○;
+    }
+}
+
+#header {
+    width: 100%;
+    background-image: url(images/hero-bg-pc.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;/*contain:元画像の縦横比は保持、要素に元画像が全て収まるように調整*/
+}
+
+#header-logo {
+    display: flex;
+    background-color: deepskyblue;
+}
+
+#header-logo p a {
+    margin-left: 50px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#header-logo-list ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+#header-logo-list ul li a {
+    margin-left: 50px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#header-logo-list-sub li {
+    list-style-type: none;
+}
+
+#header-logo-list-sub li a {
+    margin-left: 95px;
+    padding: 6px 30px;
+    border-radius: 25px;
+    list-style-type: none;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: orange;
+}
+
+#header-body #header-body-button {
+    margin-top: 20px;
+    margin-left: 1250px;
+}
+
+#header-body #header-body-button a {
+    font-size: 10px;
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+#header-body h1 {
+    margin-top: -100px;
+    margin-left: 250px;
+    font-size: 60px;
+    color: #0066FF;
+    font-weight: bold;
+}
+
+#header-body-list {
+    display: flex;
+    list-style-type: none;
+}
+
+#header-body-list .header-body-list1 {
+    margin-left: 250px;
+    padding: 20px 34px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    background-color: #0066FF;
+}
+
+#header-body-list .header-body-list2 {
+    margin-left: 10px;
+    padding: 20px 25px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    background-color: deepskyblue;
+}
+    
+#header-body-list-list {
+    display: flex;
+    list-style-type: none;
+}
+
+#header-body-list-list .header-body-list3 {
+    margin-top: 10px;
+    margin-left: 250px;
+    padding: 8px 25px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: deepskyblue;
+}
+
+#header-body-list-list .header-body-list4 {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 8px 34px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: #0066FF;
+}
+
+#header-body-item {
+    width: 100%;
+    height: 112px;
+    margin-top: 20px;
+    background-color: lavenderblush;
+}
+
+#header-body-item a {
+    text-decoration: none;
+}
+
+#header-body-item .header-body-item-button {
+    display: flex;
+    justify-content: center;
+}
+
+#header-body-item .header-body-item-button .header-body-item-button1 {
+    margin: 15px 20px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#header-body-item .header-body-item-button .header-body-item-button1 span {
+    font-size: 28px;
+    text-decoration: underline solid 4px gold;
+}
+
+#header-body-item .header-body-item-button .header-body-item-button2 {
+    margin-top: 15px;
+    margin-left: 25px;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+}
+
+#header-body-item .header-body-item-button .header-body-item-button2 span {
+    color: deeppink;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#main1-wrapper #main1 {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+#main1-wrapper #main1 .main1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: bold;
+    color: deepskyblue;
+    text-align: center;
+}
+
+#main1-wrapper #main1 .main1 a {
+    margin-top: 25px;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 15px;
+    color: deepskyblue;
+    border: solid 2px deepskyblue;
+    border-radius: 30px;
+    width: 300px;
+    height: 50px;
+    line-height: 30px;
+    text-align: center;
+}
+
+#main1-wrapper #main1 .main1-sub {
+    margin-left: 50px;
+}
+
+#main1-wrapper #main1 .main1-sub a {
+    text-decoration: none;
+    color: black;
+}
+
+#main1-wrapper #main1 .main1-sub a.main1-sub-box {
+    display: flex;
+    justify-content: left;
+    border-top: 1px dotted gainsboro;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.main1-sub a:nth-child(2) {
+    border-bottom: 1px dotted gainsboro;
+    /*padding-bottom: 30px;*/
+}
+
+
+#main1-wrapper #main1 .main1-sub a.main1-sub-box:hover {
+    opacity: 0.4;/*出現率1が普通0.5薄くなる*/
+}
+
+#main1-wrapper #main1 .main1-sub a.main1-sub-box .main1-sub-box-date1 {
+    margin-right: 40px;
+    width: 130px;
+}
+
+#main1-wrapper #main1 .main1-sub a.main1-sub-box .main1-sub-box-content1 {
+    width: 560px;
+}
+
+#main1-wrapper #main1 .main1-sub a.main1-sub-box .main1-sub-box-date2 {
+    margin-right: 40px;
+    width: 130px;
+}
+
+#main1-wrapper #main1 .main1-sub a.main1-sub-box .main1-sub-box-content2 {
+    width: 560px;
+}
+
+#main2-wrapper {
+    background-color: aliceblue;
+    width: 100%;
+}
+
+#main2-wrapper #main2 {
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#main2-wrapper #main2 .main2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 25px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #0066FF;
+    text-align: center;
+}
+
+#main2-wrapper #main2 .main2 a {
+    margin-top: 25px;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #0066FF;
+    border: solid 2px #0066FF;
+    border-radius: 30px;
+    width: 300px;
+    height: 50px;
+    line-height: 30px;
+    text-align: center;
+}
+
+#main2-wrapper #main2 .main2-sub a {
+    text-decoration: none;
+    color: black;
+}
+
+#main2-wrapper #main2 .main2-sub a.main2-sub-box {
+    display: flex;
+    justify-content: left;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-top: 1px dotted gainsboro;
+    padding-top: 30px;
+}
+
+#main2-wrapper #main2 .main2-sub a.main2-sub-box:hover {
+    opacity: 0.4;/*出現率1が普通0.5薄くなる*/
+}
+
+#main2-wrapper #main2 .main2-sub a.main2-sub-box .main2-sub-box-date1 {
+    margin-right: 50px;
+    width: 130px;
+}
+
+#main2-wrapper #main2 .main2-sub a.main2-sub-box .main2-sub-box-content1 {
+    width: 560px;
+}
+
+#main2-wrapper #main2 .main2-sub a.main2-sub-box .main2-sub-box-date2 {
+    margin-right: 50px;
+    border-bottom: 1px dotted gainsboro;
+    padding-bottom: 30px;
+    width: 130px;
+}
+
+#main2-wrapper #main2 .main2-sub a.main2-sub-box .main2-sub-box-content2 {
+    border-bottom: 1px dotted gainsboro;
+    padding-bottom: 40px;
+    width: 560px;
+}
+
+#main-mission-wrapper #main-mission {
+    width: 100%;
+    height: 800px;
+    background-image: url(images/.jpeg);/*画像もらう*/
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#main-mission-wrapper #main-mission #mission-title {
+    padding-top: 80px;
+    padding-left: 240px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#main-mission-wrapper #main-mission #mission-title span {
+    margin-top: ;
+    font-size: 60px;
+    color: deepskyblue;
+}
+
+#main-mission-wrapper #main-mission #mission-content {
+    padding-left: 240px;
+    font-size: 20px;
+}
+
+#main-mission-wrapper #main-mission #mission-screening {
+    margin-top: 30px;
+    margin-left: 240px;
+    padding: 30px 25px;
+    border: solid 2px deepskyblue;
+    display: inline-block;/*要素の横幅が中の要素の幅になる*/
+}
+
+#main-mission-wrapper #main-mission #mission-screening .mission-screening-title {
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: deepskyblue;
+}
+
+#main-pcrtesting-wrapper {
+    width: 100%;
+    height: 1800px;
+    background-color: deepskyblue;
+    background-image: url(images/.png);/*画像つける*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 50px
+}
+
+#main-pcrtesting-wrapper #main-pcrtesting #pcrtesting-title {
+    
+    margin-left: 240px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#main-pcrtesting-wrapper #main-pcrtesting #pcrtesting-title span {
+    padding-top: 80px;
+    font-size: 60px;
+}
+
+#main-pcrtesting-wrapper #main-pcrtesting #pcrtesting-content {
+    margin-top: 20px;
+    margin-left: 240px;
+    font-size: 18px;
+    color: white;
+}
+
+#main-pcrtesting-wrapper #main-pcrtesting #pcrtesting-content-box {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 120px;
+    background-color: white;
+    width: 1350px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+#main-pcrtesting-wrapper #main-pcrtesting #pcrtesting-content-box .pcrtesting-content-box1 {
+    width: 33%;/*ブラウザが違っても合わせて配置してくれる*/
+}
+
+#main-pcrtesting-wrapper #main-pcrtesting #pcrtesting-content-box .pcrtesting-content-box1 .pcrtesting-content-box1-title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    color: deepskyblue;
+    text-align: center;
+}
+
+#main-pcrtesting-wrapper #main-pcrtesting #pcrtesting-content-box .pcrtesting-content-box1 .pcrtesting-content-box1-img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#main-pcrtesting-wrapper #main-pcrtesting #pcrtesting-content-box .pcrtesting-content-box1 .pcrtesting-content-box1-content {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#main-pcrtesting-wrapper #main-pcrtesting #pcrtesting-content-box .pcrtesting-content-box1 .pcrtesting-content-box1-content sup {
+    font-size: 10px;
+}
+
+#main-pcrtesting-wrapper #main-pcrtesting #pcrtesting-content-box .pcrtesting-content-box1 .pcrtesting-content-box1-content-button a {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;30px;
+    border: solid 2px deepskyblue;
+}
+
